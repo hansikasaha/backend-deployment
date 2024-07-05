@@ -179,7 +179,7 @@ export const getUserDetails = catchAsyncErrors(async (req, res, next) => {
       httpOnly: true,                   //and an expiration date set to the current time, effectively deleting the cookie.
       expires: new Date(Date.now()),
       secure: true,
-        sameSite: "None",
+      sameSite: "None",
     })
     .json({
       success: true,
